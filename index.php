@@ -18,14 +18,16 @@
   <label for="En no">En. NO:</label>
   <input type="number" id="enno" name="enno" placeholder="Enter your En no"><br><br>
   <label for="gen">Gender: </label>
+  <input type="radio" id="gen" name="gender" value="male" checked>
   <label for="gen">Male</label>
-  <input type="radio" id="gen" name="gender" value="male">
-  <label for="gen">Female</label>
   <input type="radio" id="gen" name="gender" value="Female">
-  <label for="gen">Other</label>
-  <input type="radio" id="gen" name="gender" value="Other"><br><br>
+  <label for="gen">Female</label>
+  <input type="radio" id="gen" name="gender" value="Other">
+  <label for="gen">Other</label><br><br>
   <label for="Previous_rec_exm">Previous Exam Percentage: </label>
   <input type="int" name="exmrec" ><br><br>
+  <label for="mobileno">Contact No.:</label>
+  <input type="number" name="contactno"><br><br>
   <input type="submit" value="Submit" class="btn">
 </form>
 </div>  
