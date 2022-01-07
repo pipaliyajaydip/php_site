@@ -80,5 +80,8 @@ tr:hover {background-color: #D6EEEE;}
     </div>
     <hr>
     <center><a href="index.php"><button> MY Data is <strong>Correct</strong></button></a></center>
+    <!-- <a href="student_data.php"><button>Show all students data</button></a></center> -->
+  
+ 
 </body>
 </html>
