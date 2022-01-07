@@ -8,7 +8,9 @@
     <title>Student Exam Form</title>
 </head>
 <body>
+  
 <h1>Student Exam Form</h1>
+
 <div>
 <form action="student_data.php" method="POST">
 <label for="fname">First name:</label>
@@ -31,5 +33,6 @@
   <input type="submit" value="Submit" class="btn">
 </form>
 </div>  
+
 </body>
 </html>
