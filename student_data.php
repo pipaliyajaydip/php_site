@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Student Data</title>
     <style>table {
-  border-collapse: collapse;
+  border-collapse: collapse; 
   width: 100%;
 }
 th{
@@ -24,7 +24,25 @@ tr:hover {background-color: #D6EEEE;}
 </head>
 <body>
     <?php 
+    session_start();
+      $_SESSION['expire']=$_SESSION['start']+ 30;
 
+    if(isset($_SESSION['username'])){
+        echo "Welcome".$_SESSION['username'];
+        echo "<br>";
+        echo "your class div is:".$_SESSION['stdid'];
+        echo "<br>";
+    }
+    
+    elseif($_SESSION['expire']>$_SESSION['start']){
+        echo "please login again".$_SESSION['username']."to be continue";
+    }
+
+    else{
+        echo "please login again student";
+    }
+    
+  
     //server connection
     $servername="localhost";
     $username="root";
@@ -82,6 +100,15 @@ tr:hover {background-color: #D6EEEE;}
     <center><a href="index.php"><button> MY Data is <strong>Correct</strong></button></a></center>
     <!-- <a href="student_data.php"><button>Show all students data</button></a></center> -->
   
+    <?php
+    
+    $cook = $_COOKIE['Student'];
+    echo $cook;
+    echo "<br>";
+        
+
+    echo $_COOKIE['Student'];
+    ?>
  
 </body>
 </html>
