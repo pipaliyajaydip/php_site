@@ -14,6 +14,7 @@ $row = mysqli_fetch_assoc($result);
 
 
 mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +28,12 @@ mysqli_close($conn);
   border-collapse: collapse;
   width: 100%;
 }
+
 th{
     background-color:lightgreen;
     text-align: center;
 }
+
 th, td {
   padding: 8px;
   
