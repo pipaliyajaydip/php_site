@@ -8,6 +8,16 @@
     <title>Student Exam Form</title>
 </head>
 <body>
+  <?php
+  session_start();
+  $_SESSION['username']="Jaydip";
+  $_SESSION['stdid']="Div-A";
+  $_SESSION['start']=time();
+  echo "All are set, please fill the below form";
+
+  setcookie('Student','Hello Namaste',time()+3600);
+
+  ?>
   
 <h1>Student Exam Form</h1>
 
